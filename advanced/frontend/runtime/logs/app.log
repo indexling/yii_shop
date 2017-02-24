@@ -1,0 +1,1983 @@
+2015-11-09 16:01:48 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#8 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-11-09 16:01:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => 'aos2tq0s2njc2nb45a5fbs3le0'
+    '_csrf' => 'bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1796'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55899'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=aos2tq0s2njc2nb45a5fbs3le0; _csrf=bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056108.7613
+    'REQUEST_TIME' => 1447056108
+]
+2015-11-09 16:01:48 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#6 {main}
+2015-11-09 16:01:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => 'aos2tq0s2njc2nb45a5fbs3le0'
+    '_csrf' => 'bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1796'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55899'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=aos2tq0s2njc2nb45a5fbs3le0; _csrf=bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056108.7613
+    'REQUEST_TIME' => 1447056108
+]
+2015-11-09 16:02:07 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#8 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-11-09 16:02:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => 'aos2tq0s2njc2nb45a5fbs3le0'
+    '_csrf' => 'bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1796'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55904'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=aos2tq0s2njc2nb45a5fbs3le0; _csrf=bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056127.3513
+    'REQUEST_TIME' => 1447056127
+]
+2015-11-09 16:02:07 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#6 {main}
+2015-11-09 16:02:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => 'aos2tq0s2njc2nb45a5fbs3le0'
+    '_csrf' => 'bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1796'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55904'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=aos2tq0s2njc2nb45a5fbs3le0; _csrf=bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056127.3513
+    'REQUEST_TIME' => 1447056127
+]
+2015-11-09 16:03:18 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#8 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-11-09 16:03:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => 'aos2tq0s2njc2nb45a5fbs3le0'
+    '_csrf' => 'bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1796'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55958'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=aos2tq0s2njc2nb45a5fbs3le0; _csrf=bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056198.4234
+    'REQUEST_TIME' => 1447056198
+]
+2015-11-09 16:03:18 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#6 {main}
+2015-11-09 16:03:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => 'aos2tq0s2njc2nb45a5fbs3le0'
+    '_csrf' => 'bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1796'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '55958'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=aos2tq0s2njc2nb45a5fbs3le0; _csrf=bd65205ee3c1915bc632b84d3589565388aeb50091987381a31dabff77480fa2a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22wrn96VLtAfixfr8bJqEhTP0PLc6mbpTH%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056198.4234
+    'REQUEST_TIME' => 1447056198
+]
+2015-11-09 16:12:07 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#8 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-11-09 16:12:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1840'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56069'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056727.2976
+    'REQUEST_TIME' => 1447056727
+]
+2015-11-09 16:12:07 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#6 {main}
+2015-11-09 16:12:07 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1840'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56069'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056727.2976
+    'REQUEST_TIME' => 1447056727
+]
+2015-11-09 16:12:18 [127.0.0.1][-][-][error][yii\db\Exception] exception 'PDOException' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:579
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(579): PDO->__construct('mysql:host=loca...', 'root', '', NULL)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(529): yii\db\Connection->createPdoInstance()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#8 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#10 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#11 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#13 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#25 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#27 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#31 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#32 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#33 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#34 {main}
+
+Next exception 'yii\db\Exception' with message 'SQLSTATE[HY000] [1045] Access denied for user 'root'@'localhost' (using password: NO)' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php:534
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(836): yii\db\Connection->open()
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Connection.php(823): yii\db\Connection->getMasterPdo()
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(216): yii\db\Connection->getSlavePdo()
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(831): yii\db\Command->prepare('<span class="ke...')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Command.php(402): yii\db\Command->queryInternal('<span class="st...', '<span class="nu...')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\mysql\Schema.php(308): yii\db\Command->queryColumn()
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\db\Schema.php(228): yii\db\mysql\Schema->findTableNames('<span class="st...')
+#7 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\Generator.php(151): yii\db\Schema->getTableNames()
+#8 [internal function]: yii\gii\generators\model\Generator->yii\gii\generators\model\{closure}()
+#9 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\components\ActiveField.php(41): call_user_func(Object(Closure))
+#10 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Object.php(107): yii\gii\components\ActiveField->init()
+#11 [internal function]: yii\base\Object->__construct('[<span class="s...')
+#12 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(372): ReflectionClass->newInstanceArgs('[[<span class="...')
+#13 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\di\Container.php(151): yii\di\Container->build('<span class="st...', '[]', '[<span class="s...')
+#14 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php(344): yii\di\Container->get('<span class="st...', '[]', '[<span class="s...')
+#15 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\widgets\ActiveForm.php(288): yii\BaseYii::createObject('[<span class="s...')
+#16 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\generators\model\form.php(6): yii\widgets\ActiveForm->field(Object(yii\gii\generators\model\Generator), '<span class="st...')
+#17 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#18 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#19 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\views\default\view.php(38): yii\base\View->renderFile('<span class="st...', '[<span class="s...')
+#20 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(325): require('E:\\web\\web1\\mon...')
+#21 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(247): yii\base\View->renderPhpFile('<span class="st...', '[<span class="s...')
+#22 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\View.php(149): yii\base\View->renderFile('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#23 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(371): yii\base\View->render('<span class="st...', '[<span class="s...', Object(yii\gii\controllers\DefaultController))
+#24 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-gii\controllers\DefaultController.php(56): yii\base\Controller->render('<span class="st...', '[<span class="s...')
+#25 [internal function]: yii\gii\controllers\DefaultController->actionView('<span class="st...')
+#26 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\InlineAction.php(55): call_user_func_array('[<span class="t...', '[<span class="s...')
+#27 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Controller.php(151): yii\base\InlineAction->runWithParams('[<span class="s...')
+#28 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(455): yii\base\Controller->runAction('<span class="st...', '[<span class="s...')
+#29 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('<span class="st...', '[<span class="s...')
+#30 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#31 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#32 {main}
+Additional Information:
+
+2015-11-09 16:12:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1840'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56078'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056738.9063
+    'REQUEST_TIME' => 1447056738
+]
+2015-11-09 16:12:19 [127.0.0.1][-][-][warning][yii\log\Dispatcher::dispatch] Unable to send log via yii\debug\LogTarget: Exception 'Exception' with message 'Serialization of 'Closure' is not allowed' 
+
+in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php:58
+
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(58): serialize(Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2-debug\LogTarget.php(112): yii\debug\LogTarget->export(Array)
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Dispatcher.php(183): yii\debug\LogTarget->collect(Array, true)
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\log\Logger.php(173): yii\log\Dispatcher->dispatch(Array, true)
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\ErrorHandler.php(111): yii\log\Logger->flush(true)
+#5 [internal function]: yii\base\ErrorHandler->handleException(Object(yii\db\Exception))
+#6 {main}
+2015-11-09 16:12:18 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'gii/default/view'
+    'id' => 'model'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1840'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=model'
+    'QUERY_STRING' => 'r=gii%2Fdefault%2Fview&id=model'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56078'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_REFERER' => 'http://www.web1.com/month9/Yii206/advanced/frontend/web/index.php?r=gii%2Fdefault%2Fview&id=crud'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447056738.9063
+    'REQUEST_TIME' => 1447056738
+]
+2015-11-09 16:20:03 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\ArticleController' in file: E:\web\web1\month9\Yii206\advanced/frontend/controllers/ArticleController.php. Namespace missing?' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(563): class_exists('frontend\\contro...')
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('article')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('article')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-09 16:20:03 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56224'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057203.8139
+    'REQUEST_TIME' => 1447057203
+]
+2015-11-09 16:20:44 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:20:44 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56229'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057244.1752
+    'REQUEST_TIME' => 1447057244
+]
+2015-11-09 16:21:23 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:21:23 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56232'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057283.1664
+    'REQUEST_TIME' => 1447057283
+]
+2015-11-09 16:21:28 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article/index".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/index', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:21:28 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article/index'
+    'QUERY_STRING' => 'r=article/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56233'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057288.5057
+    'REQUEST_TIME' => 1447057288
+]
+2015-11-09 16:21:35 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:21:35 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56236'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057295.0501
+    'REQUEST_TIME' => 1447057295
+]
+2015-11-09 16:23:49 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:23:49 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56245'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057429.3748
+    'REQUEST_TIME' => 1447057429
+]
+2015-11-09 16:24:21 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article/index".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/index', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:24:21 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article/index'
+    'QUERY_STRING' => 'r=article/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56249'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057461.4556
+    'REQUEST_TIME' => 1447057461
+]
+2015-11-09 16:25:44 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:25:44 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56255'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057544.4604
+    'REQUEST_TIME' => 1447057544
+]
+2015-11-09 16:25:45 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article/index".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article/index', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:25:45 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article/index'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1844'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article/index'
+    'QUERY_STRING' => 'r=article/index'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56255'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057545.2474
+    'REQUEST_TIME' => 1447057545
+]
+2015-11-09 16:32:08 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\ArticleController' in file: E:\web\web1\month9\Yii206\advanced/frontend/controllers/ArticleController.php. Namespace missing?' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(563): class_exists('frontend\\contro...')
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('article')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('article')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-09 16:32:08 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '1800'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56344'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447057928.4843
+    'REQUEST_TIME' => 1447057928
+]
+2015-11-09 16:33:49 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "article".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:33:49 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '488'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56352'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CACHE_CONTROL' => 'max-age=0'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447058029.8301
+    'REQUEST_TIME' => 1447058029
+]
+2015-11-09 16:35:48 [127.0.0.1][-][-][error][yii\base\UnknownClassException] exception 'yii\base\UnknownClassException' with message 'Unable to find 'frontend\controllers\ArticleController' in file: E:\web\web1\month9\Yii206\advanced/frontend/controllers/ArticleController.php. Namespace missing?' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\BaseYii.php:291
+Stack trace:
+#0 [internal function]: yii\BaseYii::autoload('frontend\\contro...')
+#1 [internal function]: spl_autoload_call('frontend\\contro...')
+#2 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(563): class_exists('frontend\\contro...')
+#3 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(521): yii\base\Module->createControllerByID('article')
+#4 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php(449): yii\base\Module->createController('article')
+#5 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('article', Array)
+#6 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#7 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#8 {main}
+2015-11-09 16:35:48 [127.0.0.1][-][-][info][application] $_GET = [
+    'r' => 'article'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '488'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=article'
+    'QUERY_STRING' => 'r=article'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56379'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447058148.4519
+    'REQUEST_TIME' => 1447058148
+]
+2015-11-09 16:39:38 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][error][yii\web\HttpException:404] exception 'yii\base\InvalidRouteException' with message 'Unable to resolve the request "user".' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Module.php:461
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php(84): yii\base\Module->runAction('user', Array)
+#1 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#2 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#3 {main}
+
+Next exception 'yii\web\NotFoundHttpException' with message 'Page not found.' in E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\web\Application.php:96
+Stack trace:
+#0 E:\web\web1\month9\Yii206\advanced\vendor\yiisoft\yii2\base\Application.php(375): yii\web\Application->handleRequest(Object(yii\web\Request))
+#1 E:\web\web1\month9\Yii206\advanced\frontend\web\index.php(18): yii\base\Application->run()
+#2 {main}
+2015-11-09 16:39:38 [127.0.0.1][-][76lnn4ee3abvj9imev7tp1fbq4][info][application] $_GET = [
+    'r' => 'user'
+]
+
+$_COOKIE = [
+    'ECS' => [
+        'visit_times' => '3'
+        'username' => 'zhangsan'
+        'user_id' => '11'
+        'password' => '458779ac367ca7acd6c4d6963faba5c3'
+    ]
+    't826_2132_saltkey' => 'h9Xz8xHH'
+    't826_2132_lastvisit' => '1446425143'
+    'PHPSESSID' => '76lnn4ee3abvj9imev7tp1fbq4'
+    '_csrf' => '04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a:2:{i:0;s:5:\"_csrf\";i:1;s:32:\"B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy\";}'
+]
+
+$_SESSION = [
+    '__flash' => []
+]
+
+$_SERVER = [
+    'PATH' => 'C:\\ProgramData\\Oracle\\Java\\javapath;C:\\Windows\\system32;C:\\Windows;C:\\Windows\\System32\\Wbem;C:\\Windows\\System32\\WindowsPowerShell\\v1.0\\;E:\\phpStudy\\php55n;E:\\svn\\bin;'
+    'SYSTEMROOT' => 'C:\\Windows'
+    'COMSPEC' => 'C:\\Windows\\system32\\cmd.exe'
+    'PATHEXT' => '.COM;.EXE;.BAT;.CMD;.VBS;.VBE;.JS;.JSE;.WSF;.WSH;.MSC'
+    'WINDIR' => 'C:\\Windows'
+    'PHP_FCGI_MAX_REQUESTS' => '1000'
+    'PHPRC' => 'E:/phpStudy/php55n'
+    '_FCGI_SHUTDOWN_EVENT_' => '488'
+    'SCRIPT_NAME' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_URI' => '/month9/Yii206/advanced/frontend/web/index.php?r=user'
+    'QUERY_STRING' => 'r=user'
+    'REQUEST_METHOD' => 'GET'
+    'SERVER_PROTOCOL' => 'HTTP/1.1'
+    'GATEWAY_INTERFACE' => 'CGI/1.1'
+    'REMOTE_PORT' => '56411'
+    'SCRIPT_FILENAME' => 'E:/web/web1/month9/Yii206/advanced/frontend/web/index.php'
+    'SERVER_ADMIN' => 'admin@phpStudy.net'
+    'CONTEXT_DOCUMENT_ROOT' => 'E:/web/web1'
+    'CONTEXT_PREFIX' => ''
+    'REQUEST_SCHEME' => 'http'
+    'DOCUMENT_ROOT' => 'E:/web/web1'
+    'REMOTE_ADDR' => '127.0.0.1'
+    'SERVER_PORT' => '80'
+    'SERVER_ADDR' => '127.0.0.1'
+    'SERVER_NAME' => 'www.web1.com'
+    'SERVER_SOFTWARE' => 'Apache/2.4.10 (Win32) OpenSSL/1.0.1i mod_fcgid/2.3.9'
+    'SERVER_SIGNATURE' => ''
+    'SystemRoot' => 'C:\\Windows'
+    'HTTP_CONNECTION' => 'close'
+    'HTTP_COOKIE' => 'ECS[visit_times]=3; ECS[username]=zhangsan; ECS[user_id]=11; ECS[password]=458779ac367ca7acd6c4d6963faba5c3; t826_2132_saltkey=h9Xz8xHH; t826_2132_lastvisit=1446425143; PHPSESSID=76lnn4ee3abvj9imev7tp1fbq4; _csrf=04b5a8e1279e200186f670321be350990508a98da3c5dd59214bfe17910a0c14a%3A2%3A%7Bi%3A0%3Bs%3A5%3A%22_csrf%22%3Bi%3A1%3Bs%3A32%3A%22B75fY4bJ7ePA2plfY1i1-HtXv2NfQTJy%22%3B%7D'
+    'HTTP_ACCEPT_ENCODING' => 'gzip, deflate'
+    'HTTP_ACCEPT_LANGUAGE' => 'zh-CN,zh;q=0.8,en-US;q=0.5,en;q=0.3'
+    'HTTP_ACCEPT' => 'text/html,application/xhtml+xml,application/xml;q=0.9,*/*;q=0.8'
+    'HTTP_USER_AGENT' => 'Mozilla/5.0 (Windows NT 6.1; WOW64; rv:40.0) Gecko/20100101 Firefox/40.0'
+    'HTTP_HOST' => 'www.web1.com'
+    'FCGI_ROLE' => 'RESPONDER'
+    'PHP_SELF' => '/month9/Yii206/advanced/frontend/web/index.php'
+    'REQUEST_TIME_FLOAT' => 1447058378.6061
+    'REQUEST_TIME' => 1447058378
+]
